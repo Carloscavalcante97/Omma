@@ -1,4 +1,4 @@
-
+//carlos cavalcante- gama hacker //
 //nome da empresa//
 const nomeEmpresa = "Omma";
 console.log("Nome da empresa:", nomeEmpresa);
