@@ -1,7 +1,9 @@
+
+//nome da empresa//
 const nomeEmpresa = "Omma";
 console.log("Nome da empresa:", nomeEmpresa);
 const receitasDaOmma = [];
-
+//função para cadastro de novas receitas//
 function cadastrarReceita(id, receita, dificuldade, ingredientes, instrucoes, vegana) {
     receitasDaOmma.push({
       id,
@@ -12,7 +14,7 @@ function cadastrarReceita(id, receita, dificuldade, ingredientes, instrucoes, ve
       vegana,
     });
   }
-
+//função responsavel pela exibição e diferenciar arquivos veganos de não veganos//
   function exibirReceitas() {
     receitasDaOmma.forEach(receita => {
       console.log(receita.receita + ':');
@@ -29,6 +31,7 @@ function cadastrarReceita(id, receita, dificuldade, ingredientes, instrucoes, ve
       console.log('-------------------');
     });
   }
+  //função responsavel por deletar receitas pelo uso da id //
   function deletarReceitas(id) {
     const index = receitasDaOmma.findIndex(receita => receita.id === id);
     if (index !== -1) {
